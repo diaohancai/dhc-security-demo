@@ -2,6 +2,9 @@ server:
   port: 8080
 
 spring:
+  profiles:
+    active: dev
+
   datasource:
     driver-class-name: oracle.jdbc.driver.OracleDriver
     url: jdbc:oracle:thin:@localhost:1521:orcl
@@ -15,18 +18,3 @@ security:
   basic:
     enabled: false
 
-dhc-security:
-  jackson:
-    date-format:
-      - yyyy-MM-dd
-      - yyyy-MM-dd HH:mm
-      - yyyy-MM-dd HH:mm:ss
-      - yyyy-MM-dd HH:mm:ss.S
-      - yyyy.MM.dd
-      - yyyy.MM.dd HH:mm
-      - yyyy.MM.dd HH:mm:ss
-      - yyyy.MM.dd HH:mm:ss.S
-      - yyyy/MM/dd
-      - yyyy/MM/dd HH:mm
-      - yyyy/MM/dd HH:mm:ss
-      - yyyy/MM/dd HH:mm:ss.S

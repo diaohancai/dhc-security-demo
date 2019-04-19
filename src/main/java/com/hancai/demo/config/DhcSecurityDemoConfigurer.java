@@ -2,25 +2,23 @@ package com.hancai.demo.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hancai.demo.common.converter.DateJacksonConverter;
-import com.hancai.demo.user.service.UserService;
+import com.hancai.demo.resource.DhcSecurityProperties;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.converter.json.Jackson2ObjectMapperFactoryBean;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 
 /**
- * 注册Spring Bean
+ * 注册Spring Bean，相当于以前用于配置bean的xml文件
+ * EnableConfigurationProperties，让 Properties 配置类生效
  *
  * @author diaohancai
  */
 @Configuration
-public class DhcSecurityAutoConfig {
-
-    @Bean
-    public UserService userService() {
-        return new UserService();
-    }
+@EnableConfigurationProperties(DhcSecurityProperties.class)
+public class DhcSecurityDemoConfigurer {
 
     @Bean
     public DateJacksonConverter dateJacksonConverter() {

@@ -15,7 +15,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @EnableConfigurationProperties(DhcSecurityProperties.class)
-public class DhcSecurityPropertiesTest {
+public class DhcAuthenticationSuccessHandlerSecurityPropertiesTest {
 
     @Autowired
     private DhcSecurityProperties dhcSecurityProperties;

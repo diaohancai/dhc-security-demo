@@ -1,0 +1,26 @@
+dhc-security:
+  jackson:
+    date-format:
+      - yyyy-MM-dd
+      - yyyy-MM-dd HH:mm
+      - yyyy-MM-dd HH:mm:ss
+      - yyyy-MM-dd HH:mm:ss.S
+      - yyyy.MM.dd
+      - yyyy.MM.dd HH:mm
+      - yyyy.MM.dd HH:mm:ss
+      - yyyy.MM.dd HH:mm:ss.S
+      - yyyy/MM/dd
+      - yyyy/MM/dd HH:mm
+      - yyyy/MM/dd HH:mm:ss
+      - yyyy/MM/dd HH:mm:ss.S
+
+dhc-security-core:
+  welcome-page: /index.html
+  browser:
+    login-page: /module/login/default-login.html
+    login-process-url: /api/login
+    logout-process-url:
+  app:
+    login-page:
+    login-process-url:
+    logout-process-url:

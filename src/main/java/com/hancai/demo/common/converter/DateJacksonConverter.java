@@ -19,7 +19,6 @@ import java.util.Date;
  *
  * @author diaohancai
  */
-@EnableConfigurationProperties(DhcSecurityProperties.class)
 public class DateJacksonConverter extends JsonDeserializer<Date> {
 
     @Autowired
