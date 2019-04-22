@@ -19,8 +19,10 @@ dhc-security-core:
   browser:
     login-page: /module/login/default-login.html
     login-process-url: /api/login
-    logout-process-url:
+    logout-page: /module/login/default-login.html
+    logout-process-url: /api/logout
   app:
     login-page:
     login-process-url:
+    logout-page:
     logout-process-url:
